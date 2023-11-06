@@ -36,7 +36,6 @@ void loop(){
 
   postData = "{\"umidade\":\"" + lista[0] + "\",\"temperatura\":\"" + lista[1] + "\",\"luminosidade\":\"" + lista[2] + "\"}";
 
-  Serial.println(postData);
   httpCode = http.POST(postData);
   payload = http.getString();
 
